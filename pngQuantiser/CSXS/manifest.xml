@@ -14,7 +14,7 @@
 		</ExtensionList>
 		<ExecutionEnvironment>
 			<HostList>
-				<Host Name="PHXS" Version="[15.0,16.9]" /><!-- Support CC 2014 and CC 2015 -->
+				<Host Name="PHXS" Version="[15.0,15.9]" /><!-- Support CC 2014 and CC 2015 -->
 			</HostList>
 			<LocaleList>
 				<Locale Code="All"/>

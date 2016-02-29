@@ -1,0 +1,84 @@
+#imageCanvas{
+  /*width:300px;
+  height:208px;*/
+  /*border: 1px solid red;*/
+  background: url(../img/trans-pat.png);
+}
+
+#canvasHolder{
+  width:100%;
+  height:100%;
+  position: relative;
+
+}
+
+#getImageBut{
+  padding:10px;
+  margin:10px;
+}
+
+#loader-cover{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  visibility: hidden;
+}
+
+#loader-cover.show{
+  visibility: visible;
+}
+
+#loader{
+  position: absolute;
+  width:64px;
+  height:64px;
+  left:50%;
+  top:50%;
+  margin:-16px 0 0 -16px;
+  background: url(../img/loader.gif);
+
+  background-color: #288EDF;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+#loader.show{
+  visibility: visible;
+}
+
+#reload{
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.topcoat-button.colourBut:active, .topcoat-button.colourBut.pressed{
+  background-color: #1e7dc8;
+  color:white;
+  box-shadow: inset 0 1px rgba(0,0,0,0.12);
+}
+
+#row-container{
+  width:56%;
+  margin-left: 22%;
+}
+
+#fileSizeContainer{
+  float: left;
+  margin-top: 20px;
+  padding: 0px 30px;
+  border: white solid 1px;
+  border-radius: 4px;
+}
+#saveImageBut{
+  float: right;
+  padding: 10px;
+  margin-top: 75px;
+}
+
+#perc-saved{
+  font-size:20px;
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	ExtensionBundleId="com.chrisjcnewton.extensions"
+	ExtensionBundleName="PNG Quantiser"
+	ExtensionBundleVersion="1.0"
+	Version="5.0">
+	<Author>Chris Newton</Author>
+	<Abstract>
+		This is an Abstract
+	</Abstract>
+	<ExtensionList>
+		<Extension Id="com.chrisjcnewton.extensions.pngquantiser"
+			Version="0.1"/>
+		</ExtensionList>
+		<ExecutionEnvironment>
+			<HostList>
+				<Host Name="PHXS" Version="[15.0,16.9]" /><!-- Support CC 2014 and CC 2015 -->
+			</HostList>
+			<LocaleList>
+				<Locale Code="All"/>
+			</LocaleList>
+			<RequiredRuntimeList>
+				<RequiredRuntime Name="CSXS" Version="5.0"/>
+			</RequiredRuntimeList>
+		</ExecutionEnvironment>
+		<DispatchInfoList>
+			<Extension Id="com.chrisjcnewton.extensions.pngquantiser">
+				<DispatchInfo>
+					<Resources>
+						<MainPath>./index.html</MainPath>
+						<!--				<ScriptPath>./jsx/</ScriptPath>-->
+						<CEFCommandLine>
+							<Parameter>--enable-nodejs</Parameter><!-- Need this to enable nodejs in CC 2015 -->
+							<Parameter>--mixed-context</Parameter><!-- Need this to enable mixed js contexts in CC 2015 -->
+						</CEFCommandLine>
+					</Resources>
+					<UI>
+						<Type>Panel</Type>
+						<Menu>PNG Quantiser</Menu>
+						<Geometry>
+							<Size>
+								<Height>900</Height>
+								<Width>600</Width>
+							</Size>
+							<MaxSize>
+								<Height>1500</Height>
+								<Width>1500</Width>
+							</MaxSize>
+							<MinSize>
+								<Height>900</Height>
+								<Width>600</Width>
+							</MinSize>
+						</Geometry>
+						<Icons>
+							<Icon Type="Normal"		 >./icons/icon_light.png</Icon>
+							<Icon Type="RollOver"	 >./icons/icon_light_over.png</Icon>
+							<Icon Type="DarkNormal"	 >./icons/icon_dark.png</Icon>
+							<Icon Type="DarkRollOver">./icons/icon_dark_over.png</Icon>
+						</Icons>
+					</UI>
+				</DispatchInfo>
+			</Extension>
+		</DispatchInfoList>
+	</ExtensionManifest>

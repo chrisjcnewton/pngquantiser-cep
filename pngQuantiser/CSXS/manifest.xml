@@ -42,7 +42,7 @@
 						<Geometry>
 							<Size>
 								<Height>900</Height>
-								<Width>600</Width>
+								<Width>800</Width>
 							</Size>
 							<MaxSize>
 								<Height>1500</Height>
@@ -50,7 +50,7 @@
 							</MaxSize>
 							<MinSize>
 								<Height>900</Height>
-								<Width>600</Width>
+								<Width>800</Width>
 							</MinSize>
 						</Geometry>
 						<Icons>

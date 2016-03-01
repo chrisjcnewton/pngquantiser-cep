@@ -1,8 +1,8 @@
 var PanZoom = PanZoom || function(canvas, imagePath){
 
-  var gkhead = new Image;
-  gkhead.src = imagePath;
-  gkhead.onload = redraw;
+  var panImage = new Image;
+  panImage.src = imagePath;
+  panImage.onload = redraw;
 
   var ctx = canvas.getContext('2d');
   trackTransforms(ctx);
@@ -19,7 +19,7 @@ var PanZoom = PanZoom || function(canvas, imagePath){
     ctx.clearRect(0,0,canvas.width,canvas.height);
     ctx.restore();
 
-    ctx.drawImage(gkhead,0,0);
+    ctx.drawImage(panImage,0,0);
 
   }
   redraw();
@@ -138,7 +138,7 @@ var PanZoom = PanZoom || function(canvas, imagePath){
   }
 
   function updateImage(newImagePath){
-    gkhead.src = newImagePath + "?timestamp="+Math.random()*1000;
+    panImage.src = newImagePath + "?timestamp="+Math.random()*1000;
 
   }
 

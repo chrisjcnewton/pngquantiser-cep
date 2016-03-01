@@ -11,8 +11,6 @@
 		var jsxPath = extPath + "/ext/tool.jsx";
 		cs.evalScript( '$.evalFile( "' +jsxPath+ '")' );
 
-		//alert(getTmpFolderPath());
-
 		saveImageBut = document.querySelector('#saveImageBut');
 		saveImageBut.addEventListener('click', onSaveClicked, false);
 		loader = document.querySelector('#loader');
@@ -20,7 +18,7 @@
 
 		imageCanvas = document.querySelector('#imageCanvas');
 		imageCanvas.width = 800;
-	  imageCanvas.height = 600;
+		imageCanvas.height = 600;
 
 		setAppTheme(null);
 		cs.addEventListener( CSInterface.THEME_COLOR_CHANGED_EVENT, setAppTheme );
@@ -98,6 +96,7 @@
 			imagePanArea.updateImage( quantFilePath );
 			var stats = fs.statSync(quantFilePath);
 			calculatePercentages(stats.size);
+			currentImageSelected = (butId === 'original')? "" : "-"+butId;
 		}else{
 			loader.classList.add('show');
 			loaderCover.classList.add('show');
@@ -117,7 +116,19 @@
 			currentImageSelected = '';
 			return;
 		}
-		var arg0 = cs.getSystemPath(SystemPath.EXTENSION)+'/pngquant/pngquant';
+		var osInfo = cs.getOSInformation();
+
+		var pngQuantBinName;
+
+		if(osInfo.indexOf('Windows') > -1){
+			console.log('This is windows');
+			pngQuantBinName = '/pngquant/pngquant.exe';
+		}else if(osInfo.indexOf('Mac') > -1){
+			console.log('This is mac');
+			pngQuantBinName = '/pngquant/pngquant';
+		}
+
+		var arg0 = cs.getSystemPath(SystemPath.EXTENSION) + pngQuantBinName;
 		var arg1 = "--ext";
 		var arg2 = "-"+ colourDepth + ".png";
 		var arg3 = ""+colourDepth+"";
@@ -201,7 +212,9 @@
 
 	function getTmpFolderPath() {
 		if (tmpFolderPath == null) {
-			tmpFolderPath = cs.getSystemPath(SystemPath.EXTENSION) + '/tmp/';
+			//tmpFolderPath = cs.getSystemPath(SystemPath.EXTENSION) + '/tmp/';
+			tmpFolderPath = cs.getSystemPath(SystemPath.USER_DATA) + '/tmp/';
+			console.log(tmpFolderPath);
 		}
 		return tmpFolderPath;
 	}
@@ -215,9 +228,9 @@
 		document.getElementById("topcoat-style").href = "css/topcoat-desktop-" + type + ".css";
 		document.getElementById("main-style").href = "css/main-" + type + ".css";
 		var rgb = "rgb(" +
-			Math.round(color.red) 	+ "," +
-			Math.round(color.green)	+ "," +
-			Math.round(color.blue)	+ ")";
+		Math.round(color.red) 	+ "," +
+		Math.round(color.green)	+ "," +
+		Math.round(color.blue)	+ ")";
 		document.body.style.backgroundColor = rgb;
 	}
 

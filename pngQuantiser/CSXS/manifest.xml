@@ -14,7 +14,9 @@
 		</ExtensionList>
 		<ExecutionEnvironment>
 			<HostList>
-				<Host Name="PHXS" Version="[15.0,15.9]" /><!-- Support CC 2014 and CC 2015 -->
+				<Host Name="PHXS" Version="[15.0,16.9]" />
+				<Host Name="PHSP" Version="[15.0,16.9]" />
+
 			</HostList>
 			<LocaleList>
 				<Locale Code="All"/>
@@ -28,11 +30,11 @@
 				<DispatchInfo>
 					<Resources>
 						<MainPath>./index.html</MainPath>
-						<!--				<ScriptPath>./jsx/</ScriptPath>-->
 						<CEFCommandLine>
-							<Parameter>--enable-nodejs</Parameter><!-- Need this to enable nodejs in CC 2015 -->
-							<Parameter>--mixed-context</Parameter><!-- Need this to enable mixed js contexts in CC 2015 -->
+							<Parameter>--enable-nodejs</Parameter>
+							<Parameter>--mixed-context</Parameter>
 						</CEFCommandLine>
+
 					</Resources>
 					<UI>
 						<Type>Panel</Type>

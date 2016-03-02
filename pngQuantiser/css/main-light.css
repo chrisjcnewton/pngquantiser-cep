@@ -3,3 +3,11 @@ body {
 	background: #F4F4F4;
 	color: #181919;
 }
+
+#zoom-in{
+  background-image: url('../img/zoom-in-light.png');
+}
+
+#zoom-out{
+  background-image: url('../img/zoom-out-light.png');
+}

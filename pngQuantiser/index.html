@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/topcoat-desktop-dark.css" id="topcoat-style" >
 		<link rel="stylesheet" type="text/css" href="css/main-dark.css" id="main-style" >
 		<link rel="stylesheet" type="text/css" href="css/ui.css">
-		<script src="js/libs/CSInterface-4.0.0.js"></script>		
+		<script src="js/libs/CSInterface-4.0.0.js"></script>
 		<script src="js/panZoom.js"></script>
 		<script src="js/main.js"></script>
 	</head>
@@ -16,10 +16,15 @@
 		<button id='getImageBut' class="topcoat-button--large--cta">Load Current Image</button>
 
 		<div id='canvasHolder'>
+			<button id='zoom-in' class="topcoat-button zoomBut" disabled></button>
+			<button id='zoom-out' class="topcoat-button zoomBut" disabled></button>
+			<button id='zoom-reset' class="topcoat-button zoomBut" disabled>Reset Zoom</button>
 			<div id='loader-cover'></div>
 			<div id='loader'></div>
 			<canvas id='imageCanvas'></canvas>
 		</div>
+
+
 		<p>No of colours in PNG</p>
 		<button id='2-colours' class="topcoat-button colourBut" disabled>2</button>
 		<button id='4-colours' class="topcoat-button colourBut" disabled>4</button>

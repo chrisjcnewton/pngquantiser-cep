@@ -194,7 +194,7 @@
 		loaderCover.classList.remove('show');
 
 		if(imagePanArea){
-			imagePanArea.updateImage(tmpImgPath);
+			imagePanArea.resetImage(tmpImgPath);
 		}else{
 			imagePanArea = PanZoom(imageCanvas, tmpImgPath);
 		}

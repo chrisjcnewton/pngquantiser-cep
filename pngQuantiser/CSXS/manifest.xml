@@ -6,7 +6,7 @@
 	Version="5.0">
 	<Author>Chris Newton</Author>
 	<Abstract>
-		This is an Abstract
+		This extension allows the creation of 8-bit quantised PNGs which can create much smaller transparent PNGs than is capable by the normal save for web exporter.
 	</Abstract>
 	<ExtensionList>
 		<Extension Id="com.chrisjcnewton.extensions.pngquantiser"

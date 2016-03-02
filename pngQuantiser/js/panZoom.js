@@ -149,10 +149,16 @@ var PanZoom = PanZoom || function(canvas, imagePath){
     }
   }
 
-  function updateImage(newImagePath){
+  function resetImage(newImagePath){
+    panImage.onload = fitImage;
     panImage.src = newImagePath + "?timestamp="+Math.random()*1000;
-    ctx.scale(1,1);
-    redraw();
+    ctx.setTransform(1,0,0,1,0,0); // reset scale/zoom
+  }
+
+  function updateImage(newImagePath){
+    panImage.onload = redraw;
+    panImage.src = newImagePath + "?timestamp="+Math.random()*1000;
+
   }
 
   function getBase64ImageData(){
@@ -160,6 +166,7 @@ var PanZoom = PanZoom || function(canvas, imagePath){
   }
 
   return {
+    resetImage:resetImage,
     updateImage:updateImage,
     getBase64ImageData:getBase64ImageData
   }

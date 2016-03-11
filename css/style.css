@@ -1,0 +1,107 @@
+/* Google Font flat longshade Icon in pure css
+   Create with love by @LukyVj
+   Inspired by so much people an works over the internet.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Marck+Script);
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #333;
+    overflow: hidden;
+}
+.container {
+    width: 245px;
+    margin: 180px auto;
+}
+div.icon {
+    /*transform*/
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    float: left;
+    width: 245px;
+    height: 245px;
+    margin: 5px;
+    display: block;
+    background: rgb(150, 150, 150);
+    font-family: "Marck Script",  sans-serif;
+    text-align:center;
+    font-size: 13em;
+    font-weight: 500;
+    line-height:.75;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+div.icon:after {
+    top: 0px;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding-top: 54.05px;
+    box-sizing: border-box;
+    /*box-shadow*/
+    -webkit-box-shadow: 1px 1px 0px #000 ;
+    -moz-box-shadow:1px 1px 0px #000 ;
+    box-shadow:1px 1px 0px #000 ;
+}
+/*The shadow of the squares */
+.icon:before {
+    content: '';
+    display: block;
+    float: left;
+    width: 136%;
+    height: 136%;
+    position: absolute;
+    margin: 29%;
+    /*transform*/
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /*linear-gradient*/
+    background: -webkit-gradient(linear,60.06% 107.04%,39.94% -7.04%,from(rgba(0,0,0,.1)),to(rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));
+    background: -moz-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));
+    background: -o-linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));
+    background: linear-gradient(100deg,rgba(0,0,0,.1),rgba(0,0,0,0));
+}
+
+.gf:after {
+   -webkit-font-smoothing: antialiased;
+    content: "P";
+    /*background: #dd473d;*/
+    background: #3ea9de;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.15),138px 138px 0px #247aa6, 137px 137px 0px #247aa6, 136px 136px 0px #247aa6,135px 135px 0px #247aa6, 134px 134px 0px #247aa6, 133px 133px 0px #247aa6,132px 132px 0px #247aa6, 131px 131px 0px #247aa6, 130px 130px 0px #247aa6, 129px 129px 0px #247aa6, 128px 127px 0px #247aa6, 126px 126px 0px #247aa6,125px 125px 0px #247aa6, 124px 124px 0px #247aa6, 123px 123px 0px #247aa6,122px 122px 0px #247aa6, 121px 121px 0px #247aa6, 120px 120px 0px #247aa6, 119px 118px 0px #247aa6, 117px 116px 0px #247aa6, 115px 114px 0px #247aa6,113px 113px 0px #247aa6, 112px 112px 0px #247aa6, 111px 111px 0px #247aa6, 110px 110px 0px #247aa6, 109px 109px 0px #247aa6, 108px 108px 0px #247aa6, 107px 107px 0px #247aa6, 106px 106px 0px #247aa6, 105px 105px 0px #247aa6, 104px 104px 0px #247aa6, 103px 103px 0px #247aa6, 102px 102px 0px #247aa6, 101px 101px 0px #247aa6, 100px 100px 0px #247aa6, 99px 99px 0px #247aa6, 98px 98px 0px #247aa6, 97px 97px 0px #247aa6, 96px 96px 0px #247aa6, 95px 95px 0px #247aa6, 94px 94px 0px #247aa6, 93px 93px 0px #247aa6, 92px 92px 0px #247aa6, 91px 91px 0px #247aa6, 90px 90px 0px #247aa6, 80px 80px 0px #247aa6, 79px 79px 0px #247aa6, 78px 78px 0px #247aa6, 77px 77px 0px #247aa6, 76px 76px 0px #247aa6, 75px 75px 0px #247aa6, 74px 74px 0px #247aa6, 73px 73px 0px #247aa6, 72px 72px 0px #247aa6, 71px 71px 0px #247aa6, 70px 70px 0px #247aa6, 69px 69px 0px #247aa6, 68px 68px 0px #247aa6, 67px 67px 0px #247aa6, 66px 66px 0px #247aa6, 65px 65px 0px #247aa6,64px 64px 0px #247aa6, 63px 63px 0px #247aa6, 62px 62px 0px #247aa6, 61px 61px 0px #247aa6, 60px 60px 0px #247aa6, 59px 59px 0px #247aa6, 58px 58px 0px #247aa6, 57px 57px 0px #247aa6, 56px 56px 0px #247aa6, 55px 55px 0px #247aa6, 54px 54px 0px #247aa6, 53px 53px 0px #247aa6, 52px 52px 0px #247aa6, 51px 51px 0px #247aa6, 50px 50px 0px #247aa6, 49px 49px 0px #247aa6, 48px 48px 0px #247aa6, 47px 47px 0px #247aa6, 46px 46px 0px #247aa6, 45px 45px 0px #247aa6, 44px 44px 0px #247aa6, 43px 43px 0px #247aa6, 42px 42px 0px #247aa6, 41px 41px 0px #247aa6, 40px 40px 0px #247aa6, 39px 39px 0px #247aa6, 38px 38px 0px #247aa6, 37px 37px 0px #247aa6, 36px 36px 0px #247aa6, 35px 35px 0px #247aa6, 34px 34px 0px #247aa6, 33px 33px 0px #247aa6,32px 32px 0px #247aa6, 31px 31px 0px #247aa6, 30px 30px 0px #247aa6, 29px 29px 0px #247aa6, 28px 28px 0px #247aa6, 27px 27px 0px #247aa6, 26px 26px 0px #247aa6, 25px 25px 0px #247aa6, 24px 24px 0px #247aa6, 23px 23px 0px #247aa6, 22px 22px 0px #247aa6, 21px 21px 0px #247aa6, 20px 20px 0px #247aa6, 19px 19px 0px #247aa6, 18px 18px 0px #247aa6, 17px 17px 0px #247aa6, 16px 16px 0px #247aa6, 15px 15px 0px #247aa6, 14px 14px 0px #247aa6, 13px 13px 0px #247aa6, 12px 12px 0px #247aa6, 11px 11px 0px #247aa6, 10px 10px 0px #247aa6, 9px 9px 0px #247aa6, 8px 8px 0px #247aa6, 7px 7px 0px #247aa6, 6px 6px 0px #247aa6, 5px 5px 0px #247aa6, 4px 4px 0px #247aa6, 3px 3px 0px #247aa6, 2px 2px 0px #247aa6, 1px 1px 0px #247aa6, 15px 1px 0px #247aa6,16px 2px 0px #247aa6,17px 3px 0px #247aa6,18px 4px 0px #247aa6,19px 5px 0px #247aa6,20px 6px 0px #247aa6,21px 7px 0px #247aa6,22px 8px 0px #247aa6,
+23px 9px 0px #247aa6,
+24px 10px 0px #247aa6,
+25px 11px 0px #247aa6,
+26px 12px 0px #247aa6,
+27px 13px 0px #247aa6,
+28px 14px 0px #247aa6,
+29px 15px 0px #247aa6,
+30px 16px 0px #247aa6 ,
+31px 17px 0px #247aa6,
+32px 18px 0px #247aa6,
+33px 19px 0px #247aa6,
+34px 20px 0px #247aa6,
+35px 21px 0px #247aa6,
+36px 22px 0px #247aa6,
+37px 23px 0px #247aa6,
+38px 24px 0px #247aa6,
+39px 25px 0px #247aa6,
+40px 26px 0px #247aa6,
+41px 27px 0px #247aa6,
+42px 28px 0px #247aa6,
+43px 29px 0px #247aa6,
+44px 30px 0px #247aa6,
+45px 31px 0px #247aa6,
+46px 32px 0px #247aa6;
+}

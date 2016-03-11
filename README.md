@@ -27,10 +27,10 @@ The easiest method is to download a third-party tool called [ZXPInstaller](http:
 Once installed the Add-on can be found in the 'Window' > 'Extensions' menu under the entry 'PNG Quantiser'.
 Once the Add-on has been opened it can be docked in any pallete you desire for future use.
 
-Open an image in Photoshop that you would like to save as a quantised PNG.
-Click on the 'Load Current Image' button in the Add-on.
-The image will now appear in the preview window in the Add-on.
-The zoom level can be adjusted by clicking on the appropriate buttons above the preview window. It can also be adjusted using the mouse wheel and clicking on the image with the mouse.
-The background colour of the preview window can be changed by clicking on the appropriate buttons below the preview window.
-The no of colours to quantise the image by can be changed by clicking on the appropriate buttons below the preview window. The amount of file size being saved can be seen in the file size details area.
-Once happy with the amount of compression the PNG file can be saved by clicking on the 'Save Quantised Image' button.
+- Open an image in Photoshop that you would like to save as a quantised PNG.
+- Click on the 'Load Current Image' button in the Add-on.
+- The image will now appear in the preview window in the Add-on.
+- The zoom level can be adjusted by clicking on the appropriate buttons above the preview window. It can also be adjusted using the mouse wheel and clicking on the image with the mouse.
+- The background colour of the preview window can be changed by clicking on the appropriate buttons below the preview window.
+- The no of colours to quantise the image by can be changed by clicking on the appropriate buttons below the preview window. The amount of file size being saved can be seen in the file size details area.
+- Once happy with the amount of compression the PNG file can be saved by clicking on the 'Save Quantised Image' button.

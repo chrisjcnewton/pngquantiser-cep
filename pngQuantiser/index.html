@@ -18,14 +18,34 @@
 		<div id='canvasHolder'>
 			<button id='zoom-in' class="topcoat-button zoomBut" disabled></button>
 			<button id='zoom-out' class="topcoat-button zoomBut" disabled></button>
-			<button id='zoom-reset' class="topcoat-button zoomBut" disabled>Reset Zoom</button>
+			<button id='zoom-reset' class="topcoat-button zoomBut" disabled>Fit Image</button>
+			<button id='zoom-100perc' class="topcoat-button zoomBut" disabled>Zoom 1:1</button>
 			<div id='loader-cover'></div>
 			<div id='loader'></div>
 			<canvas id='imageCanvas'></canvas>
 		</div>
 
+		<div class="bg-colour-picker">
+			<p class='bg-colour-title'>Background colour:</p>
+			<button class="bg-color-button topcoat-icon-button transparent" disabled>
+				<span class="topcoat-icon"></span>
+			</button>
+			<button class="bg-color-button topcoat-icon-button grey" disabled>
+				<span class="topcoat-icon" style="background-color:#818181;"></span>
+			</button>
+			<button class="bg-color-button topcoat-icon-button red" disabled>
+				<span class="topcoat-icon" style="background-color:red;"></span>
+			</button>
+			<button class="bg-color-button topcoat-icon-button green" disabled>
+				<span class="topcoat-icon" style="background-color:green;"></span>
+			</button>
+			<button class="bg-color-button topcoat-icon-button blue" disabled>
+				<span class="topcoat-icon" style="background-color:blue;"></span>
+			</button>
+		</div>
 
-		<p>No of colours in PNG</p>
+
+		<p class="colours-title">No of colours in PNG:</p>
 		<button id='2-colours' class="topcoat-button colourBut" disabled>2</button>
 		<button id='4-colours' class="topcoat-button colourBut" disabled>4</button>
 		<button id='8-colours' class="topcoat-button colourBut" disabled>8</button>

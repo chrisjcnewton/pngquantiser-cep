@@ -34,9 +34,7 @@
 				deleteFolderRecursive(getTmpFolderPath());
 				var js = "$.saveCurrPSImage('"+getTmpFolderPath()+"')";
 				cs.evalScript( js , onPSImageSaved);
-
 			},10);
-
 		}, false);
 
 		var colourButtons = document.querySelectorAll('.colourBut');
@@ -45,6 +43,48 @@
 			colourButtons[i].addEventListener('click',onColourButClicked,false);
 		}
 
+		var zoomInButton = document.querySelector('#zoom-in');
+		var zoomOutButton = document.querySelector('#zoom-out');
+		var zoomResetButton = document.querySelector('#zoom-reset');
+		var zoom100PercButton = document.querySelector('#zoom-100perc');
+
+		zoomInButton.addEventListener('click', function(){
+			imagePanArea.zoomIn();
+		}, false);
+
+		zoomOutButton.addEventListener('click', function(){
+			imagePanArea.zoomOut();
+		}, false);
+
+		zoomResetButton.addEventListener('click', function(){
+			var quantFilePath = getTmpFolderPath() + "orig-tmp"+currentImageSelected+".png";
+			imagePanArea.resetImage( quantFilePath );
+		}, false);
+
+		zoom100PercButton.addEventListener('click', function(){
+			imagePanArea.zoom1to1();
+		}, false);
+
+		var bgColorTrans = document.querySelector('.bg-color-button.transparent');
+		bgColorTrans.addEventListener('click', function(){
+			imageCanvas.removeAttribute('style');
+		}, false);
+		var bgColorGrey = document.querySelector('.bg-color-button.grey');
+		bgColorGrey.addEventListener('click', function(){
+			imageCanvas.style.background = "#818181";
+		}, false);
+		var bgColorRed = document.querySelector('.bg-color-button.red');
+		bgColorRed.addEventListener('click', function(){
+			imageCanvas.style.background = "red";
+		}, false);
+		var bgColorGreen = document.querySelector('.bg-color-button.green');
+		bgColorGreen.addEventListener('click', function(){
+			imageCanvas.style.background = "green";
+		}, false);
+		var bgColorBlue = document.querySelector('.bg-color-button.blue');
+		bgColorBlue.addEventListener('click', function(){
+			imageCanvas.style.background = "blue";
+		}, false);
 
 	}
 

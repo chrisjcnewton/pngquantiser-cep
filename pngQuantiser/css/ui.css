@@ -1,8 +1,11 @@
 #imageCanvas{
-  /*width:300px;
-  height:208px;*/
-  /*border: 1px solid red;*/
   background: url(../img/trans-pat.png);
+}
+
+
+
+p{
+  margin: 12px 0;
 }
 
 #canvasHolder{
@@ -40,10 +43,38 @@
   left:0;
 }
 
+#zoom-100perc{
+  left:70px;
+}
+
 .zoomBut{
   position:absolute;
   top:-27px;
 
+}
+
+.bg-color-button {
+  /*float:right;*/
+  margin: 11px 0 0 0;
+}
+
+.bg-colour-title{
+  /*float:right;*/
+  margin: 2px 0 -5px 0;
+}
+
+.bg-colour-picker{
+  border-bottom: 1px solid #818181;
+  padding-bottom: 12px;
+}
+
+.bg-color-button.transparent span{
+  background: url(../img/trans-pat.png);
+  background-size: contain;
+}
+
+.colours-title{
+  clear:both;
 }
 
 #loader-cover{
@@ -82,6 +113,8 @@
   position:absolute;
   top:0;
   left:0;
+
+  display:none;
 }
 
 .topcoat-button.colourBut:active, .topcoat-button.colourBut.pressed{
@@ -99,7 +132,7 @@
   float: left;
   margin-top: 20px;
   padding: 0px 30px;
-  border: white solid 1px;
+  border: #818181 solid 1px;
   border-radius: 4px;
 }
 #saveImageBut{

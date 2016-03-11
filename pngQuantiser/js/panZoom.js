@@ -8,10 +8,10 @@ var PanZoom = PanZoom || function(canvas, imagePath){
   trackTransforms(ctx);
 
   function fitImage(){
-    console.log("Image dimensions = "+ panImage.width + " " + panImage.height);
-    console.log("Canvas dimensions = "+ canvas.width + " " + canvas.height);
+    //console.log("Image dimensions = "+ panImage.width + " " + panImage.height);
+    //console.log("Canvas dimensions = "+ canvas.width + " " + canvas.height);
     var widthRatio = canvas.width / panImage.width;
-    console.log("widthRatio = "+widthRatio);
+    //console.log("widthRatio = "+widthRatio);
     if(widthRatio < 1){
       ctx.scale(widthRatio,widthRatio);
     }
@@ -165,7 +165,23 @@ var PanZoom = PanZoom || function(canvas, imagePath){
     return canvas.toDataURL('image/png')
   }
 
+  function zoomIn(){
+    zoom( 1 );
+  }
+
+  function zoomOut(){
+    zoom( -1 );
+  }
+
+  function zoom1to1(){
+    ctx.setTransform(1,0,0,1,0,0); // reset scale/zoom
+    redraw();
+  }
+
   return {
+    zoomIn:zoomIn,
+    zoomOut:zoomOut,
+    zoom1to1:zoom1to1,
     resetImage:resetImage,
     updateImage:updateImage,
     getBase64ImageData:getBase64ImageData

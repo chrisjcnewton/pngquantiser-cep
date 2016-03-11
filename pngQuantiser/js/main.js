@@ -106,8 +106,6 @@
 			}
 		});
 
-
-
 	}
 
 	function deleteFolderRecursive(path) {
@@ -223,12 +221,10 @@
 
 		var stats = fs.statSync(tmpImgPath)
 		originalFileSize = stats.size;
-		calculatePercentages(originalFileSize);
-
+		//calculatePercentages(originalFileSize);
 
 		resetColourDepthButtons();
-		var originalButton = document.querySelector('#full-colours');
-		originalButton.classList.add('pressed');
+		document.querySelector('#default').classList.add('pressed');
 
 		loader.classList.remove('show');
 		loaderCover.classList.remove('show');
@@ -238,6 +234,8 @@
 		}else{
 			imagePanArea = PanZoom(imageCanvas, tmpImgPath);
 		}
+		// default to 256 compression
+		generateQuantisedImage('256');
 
 	}
 

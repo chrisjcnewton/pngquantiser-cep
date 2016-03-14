@@ -1,0 +1,49 @@
+/*
+	Fractal by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+/* Spotlight */
+/* line 15, ../sass/ie9.scss */
+.spotlight .image {
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 21, ../sass/ie9.scss */
+.spotlight .content {
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 27, ../sass/ie9.scss */
+.spotlight:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* line 34, ../sass/ie9.scss */
+.spotlight:nth-child(2n) .image {
+  margin: 0 3em 0 0;
+}
+/* line 38, ../sass/ie9.scss */
+.spotlight:nth-child(2n) .content {
+  text-align: left;
+}
+
+/* Header */
+/* line 46, ../sass/ie9.scss */
+#header {
+  height: auto;
+  text-align: center;
+}
+/* line 50, ../sass/ie9.scss */
+#header .content {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 55, ../sass/ie9.scss */
+#header .image {
+  display: inline-block;
+  vertical-align: middle;
+}

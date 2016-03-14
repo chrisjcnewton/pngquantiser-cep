@@ -1,0 +1,91 @@
+/*
+	Fractal by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+/* Button */
+/* line 14, ../sass/ie8.scss */
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  position: relative;
+  -ms-behavior: url("assets/js/ie/PIE.htc");
+  border: solid 2px #e6e6e6 !important;
+}
+/* line 23, ../sass/ie8.scss */
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+  border: solid 2px #e6e6e6 !important;
+}
+/* line 27, ../sass/ie8.scss */
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+button.special,
+.button.special {
+  border: none !important;
+}
+/* line 30, ../sass/ie8.scss */
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+  border: none !important;
+}
+
+/* Image */
+/* line 38, ../sass/ie8.scss */
+.image {
+  -ms-behavior: url("assets/js/ie/PIE.htc");
+}
+/* line 41, ../sass/ie8.scss */
+.image img {
+  position: relative;
+  -ms-behavior: url("assets/js/ie/PIE.htc");
+}
+/* line 47, ../sass/ie8.scss */
+.image.phone:before, .image.phone:after {
+  display: none;
+}
+/* line 52, ../sass/ie8.scss */
+.image.phone .inner:before, .image.phone .inner:after {
+  display: none;
+}
+
+/* List */
+/* line 63, ../sass/ie8.scss */
+ul.icons li {
+  padding: 0 0 0 1.5em;
+}
+/* line 66, ../sass/ie8.scss */
+ul.icons li:first-child {
+  padding-left: 0 !important;
+}
+/* line 71, ../sass/ie8.scss */
+ul.icons li .icon:before {
+  font-size: 24px;
+}
+/* line 78, ../sass/ie8.scss */
+ul.icons.major li {
+  padding: 0 0 0 2.5em;
+}
+/* line 82, ../sass/ie8.scss */
+ul.icons.major li .icon:before {
+  font-size: 48px;
+}
+
+/* Header */
+/* line 93, ../sass/ie8.scss */
+#header {
+  min-height: 0;
+}
+/* line 96, ../sass/ie8.scss */
+#header .image {
+  margin: 0 0 2em 0;
+}

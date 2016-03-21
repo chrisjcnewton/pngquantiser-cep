@@ -1,4 +1,4 @@
-# PNG Quantiser - An Adobe Add-on
+# PNG Quantiser - A Photoshop Add-on
 PNG Quantiser Add-on for Photoshop CC 2014 and higher.
 
 This Add-on allows the creation of 8-bit quantised PNGs which can create much smaller (~75%) transparent PNGs than is capable with the normal save for web exporter.

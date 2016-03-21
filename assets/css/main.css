@@ -2716,26 +2716,27 @@ input[type="radio"]:focus + label:before {
   border-radius: 0;
   display: block;
   position: relative;
-  width: 100%;
+  width: 40%;
+  margin: 12% auto;
 }
 
-/* line 135, ../sass/components/_image.scss */
+/* line 136, ../sass/components/_image.scss */
 .image {
   box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
 }
-/* line 138, ../sass/components/_image.scss */
+/* line 139, ../sass/components/_image.scss */
 .image.imac {
   box-shadow: none;
 }
-/* line 141, ../sass/components/_image.scss */
+/* line 142, ../sass/components/_image.scss */
 .image.imac .inner, .image.imac:before, .image.imac:after {
   border-color: #e6e6e6;
 }
-/* line 146, ../sass/components/_image.scss */
+/* line 147, ../sass/components/_image.scss */
 .image.imac .inner:before {
   background: #e6e6e6;
 }
-/* line 150, ../sass/components/_image.scss */
+/* line 151, ../sass/components/_image.scss */
 .image.imac .inner:after {
   border-color: #e6e6e6;
 }
@@ -3364,23 +3365,23 @@ table.alt tbody tr td {
 .wrapper.style1 .icon {
   color: #b5d5f4;
 }
-/* line 135, ../sass/components/_image.scss */
+/* line 136, ../sass/components/_image.scss */
 .wrapper.style1 .image {
   box-shadow: 0 0 0 4px #4696e5, 0 0 0 5px rgba(255, 255, 255, 0.25);
 }
-/* line 138, ../sass/components/_image.scss */
+/* line 139, ../sass/components/_image.scss */
 .wrapper.style1 .image.imac {
   box-shadow: none;
 }
-/* line 141, ../sass/components/_image.scss */
+/* line 142, ../sass/components/_image.scss */
 .wrapper.style1 .image.imac .inner, .wrapper.style1 .image.imac:before, .wrapper.style1 .image.imac:after {
   border-color: rgba(255, 255, 255, 0.25);
 }
-/* line 146, ../sass/components/_image.scss */
+/* line 147, ../sass/components/_image.scss */
 .wrapper.style1 .image.imac .inner:before {
   background: rgba(255, 255, 255, 0.25);
 }
-/* line 150, ../sass/components/_image.scss */
+/* line 151, ../sass/components/_image.scss */
 .wrapper.style1 .image.imac .inner:after {
   border-color: rgba(255, 255, 255, 0.25);
 }
@@ -3575,23 +3576,23 @@ table.alt tbody tr td {
 .wrapper.style2 .icon {
   color: #e0e0e0;
 }
-/* line 135, ../sass/components/_image.scss */
+/* line 136, ../sass/components/_image.scss */
 .wrapper.style2 .image {
   box-shadow: 0 0 0 4px #fbfbfb, 0 0 0 5px #e6e6e6;
 }
-/* line 138, ../sass/components/_image.scss */
+/* line 139, ../sass/components/_image.scss */
 .wrapper.style2 .image.imac {
   box-shadow: none;
 }
-/* line 141, ../sass/components/_image.scss */
+/* line 142, ../sass/components/_image.scss */
 .wrapper.style2 .image.imac .inner, .wrapper.style2 .image.imac:before, .wrapper.style2 .image.imac:after {
   border-color: #e6e6e6;
 }
-/* line 146, ../sass/components/_image.scss */
+/* line 147, ../sass/components/_image.scss */
 .wrapper.style2 .image.imac .inner:before {
   background: #e6e6e6;
 }
-/* line 150, ../sass/components/_image.scss */
+/* line 151, ../sass/components/_image.scss */
 .wrapper.style2 .image.imac .inner:after {
   border-color: #e6e6e6;
 }
@@ -3789,23 +3790,23 @@ table.alt tbody tr td {
 .wrapper.style3 .icon {
   color: #b0b0b0;
 }
-/* line 135, ../sass/components/_image.scss */
+/* line 136, ../sass/components/_image.scss */
 .wrapper.style3 .image {
   box-shadow: 0 0 0 4px #f7f7f7, 0 0 0 5px #d6d6d6;
 }
-/* line 138, ../sass/components/_image.scss */
+/* line 139, ../sass/components/_image.scss */
 .wrapper.style3 .image.imac {
   box-shadow: none;
 }
-/* line 141, ../sass/components/_image.scss */
+/* line 142, ../sass/components/_image.scss */
 .wrapper.style3 .image.imac .inner, .wrapper.style3 .image.imac:before, .wrapper.style3 .image.imac:after {
   border-color: #d6d6d6;
 }
-/* line 146, ../sass/components/_image.scss */
+/* line 147, ../sass/components/_image.scss */
 .wrapper.style3 .image.imac .inner:before {
   background: #d6d6d6;
 }
-/* line 150, ../sass/components/_image.scss */
+/* line 151, ../sass/components/_image.scss */
 .wrapper.style3 .image.imac .inner:after {
   border-color: #d6d6d6;
 }
@@ -4043,23 +4044,23 @@ table.alt tbody tr td {
 #header .icon {
   color: #b5d5f4;
 }
-/* line 135, ../sass/components/_image.scss */
+/* line 136, ../sass/components/_image.scss */
 #header .image {
   box-shadow: 0 0 0 4px #4696e5, 0 0 0 5px rgba(255, 255, 255, 0.25);
 }
-/* line 138, ../sass/components/_image.scss */
+/* line 139, ../sass/components/_image.scss */
 #header .image.imac {
   box-shadow: none;
 }
-/* line 141, ../sass/components/_image.scss */
+/* line 142, ../sass/components/_image.scss */
 #header .image.imac .inner, #header .image.imac:before, #header .image.imac:after {
   border-color: rgba(255, 255, 255, 0.25);
 }
-/* line 146, ../sass/components/_image.scss */
+/* line 147, ../sass/components/_image.scss */
 #header .image.imac .inner:before {
   background: rgba(255, 255, 255, 0.25);
 }
-/* line 150, ../sass/components/_image.scss */
+/* line 151, ../sass/components/_image.scss */
 #header .image.imac .inner:after {
   border-color: rgba(255, 255, 255, 0.25);
 }

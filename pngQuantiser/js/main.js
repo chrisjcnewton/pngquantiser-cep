@@ -2,7 +2,7 @@
 (function(){
 	window.addEventListener('load', init, false);
 
-	var cs, tmpFolderPath, imageCanvas, loader, loaderCover, imagePanArea, originalFileSize,saveImageBut, currentImageSelected = '';
+	var cs, tmpFolderPath, imageCanvas, loader, loaderCover, imagePanArea, originalFileSize,saveImageBut, currentImageSelected = '', customColourInput;
 	var fs = require('fs');
 
 	function init(){
@@ -85,6 +85,38 @@
 		bgColorBlue.addEventListener('click', function(){
 			imageCanvas.style.background = "blue";
 		}, false);
+		var bgColorBlack = document.querySelector('.bg-color-button.black');
+		bgColorBlack.addEventListener('click', function(){
+			imageCanvas.style.background = "black";
+		}, false);
+		var bgColorWhite = document.querySelector('.bg-color-button.white');
+		bgColorWhite.addEventListener('click', function(){
+			imageCanvas.style.background = "white";
+		}, false);
+
+		customColourInput = document.querySelector("#custom-colour-input");
+		customColourInput.addEventListener('keydown', function(e){
+			if( e.keyCode != 13 ) return;
+			if(!checkValidColour(e.target.value)) return;
+			resetColourDepthButtons();
+			document.querySelector('#custom').classList.add('pressed');
+			checkIfQuantFileExists(e.target.value);
+		}, false);
+
+	}
+
+	function checkValidColour(colorValue){
+		if(colorValue > 256 || colorValue < 2){
+			alert("Only numbers between 2 and 256 are allowed!");
+			customColourInput.value = 2;
+			return false;
+		}
+		if(colorValue % 1 > 0){
+			alert("Only whole numbers are allowed!");
+			customColourInput.value = 2;
+			return false;
+		}
+		return true;
 
 	}
 
@@ -127,7 +159,15 @@
 		e.target.classList.add('pressed');
 		var butId = e.target.innerHTML;
 
+		if(butId === "Custom"){
+			butId = customColourInput.value;
+			if(!checkValidColour(butId)) return;
+		}
+		checkIfQuantFileExists(butId);
 
+	}
+
+	function checkIfQuantFileExists(butId){
 		var quantFilePath = getTmpFolderPath() + "orig-tmp-"+butId+".png";
 		if(fs.existsSync(quantFilePath)){
 			console.log(butId+' exists ');
@@ -218,6 +258,9 @@
 		for(var i=0; i<buttons.length; i++){
 			buttons[i].removeAttribute('disabled');
 		}
+
+
+		customColourInput.removeAttribute('disabled');
 
 		var stats = fs.statSync(tmpImgPath)
 		originalFileSize = stats.size;

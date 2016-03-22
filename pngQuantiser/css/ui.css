@@ -36,6 +36,16 @@ p{
   right:4px;
 }
 
+#custom-colour-input{
+  width:40px;
+  margin: 0 20px 0 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #zoom-reset{
   left:0;
 }
@@ -121,7 +131,7 @@ p{
 }
 
 #row-container{
-  width:56%;
+  width:58%;
   margin-left: 22%;
 }
 

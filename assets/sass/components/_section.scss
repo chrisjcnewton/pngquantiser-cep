@@ -55,11 +55,11 @@
 			text-align: center;
 
 			&:after {
-				content: '';
-				border-bottom: solid (_size(border-width) * 2) _palette(border);
-				display: block;
-				width: 4em;
-				margin: _size(element-margin) auto 0 auto;
+				// content: '';
+				// border-bottom: solid (_size(border-width) * 2) _palette(border);
+				// display: block;
+				// width: 4em;
+				// margin: _size(element-margin) auto 0 auto;
 			}
 
 			// Small.

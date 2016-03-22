@@ -16,10 +16,12 @@
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
+		margin-bottom: 3%;
 
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+			width:100%;
 		}
 
 		&.left,

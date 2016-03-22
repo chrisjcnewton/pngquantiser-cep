@@ -2358,11 +2358,6 @@ button.special:active,
 }
 
 /* Form */
-/* line 13, ../sass/components/_form.scss */
-form {
-  margin: 0 0 1em 0;
-}
-
 /* line 17, ../sass/components/_form.scss */
 label {
   display: block;

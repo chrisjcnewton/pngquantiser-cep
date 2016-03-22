@@ -10,13 +10,13 @@
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-75369429-1', 'auto');
-		ga('send', 'pageview');
+	ga('create', 'UA-75369429-1', 'auto');
+	ga('send', 'pageview');
 	</script>
 </head>
 <body id="top">
@@ -39,83 +39,91 @@
 		<header class="major">
 			<h2>This Add-on allows the creation of 8-bit quantised PNGs which can <br />create much smaller (~75%) transparent PNGs than is capable<br />  with the normal save for web exporter in Photoshop.</h2>
 		</header>
-</section>
+	</section>
 
-<!-- Two -->
-<section id="two" class="wrapper">
-	<div class="inner alt">
-		<section class="spotlight">
-			<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
-			<div class="content">
-				<h3>Technology</h3>
-				<p>The Add-on has been created using the Adobe Common Extensibility Platform (CEP). Under the hood it uses the <a href='https://pngquant.org/'>pngquant</a> Library which can create 8-bit PNGs with alpha transparency at vastly smaller file sizes. It is based heavily on <a href="https://pngmini.com/">ImageAlpha</a> which is a standalone mac app with similar functionality. This Add-on brings that functionality into Photoshop on both Mac and Windows.</p>
-			</div>
-		</section>
-		<section>
-			<!-- <div class="image"><img src="images/pic02.jpg" alt="" /></div> -->
-			<div class="content">
-				<h3>Installation</h3>
-				<p><a href='https://github.com/chrisjcnewton/pngquantiser-cep/archive/master.zip'>Download the zip</a> or clone the repository from <a href='https://github.com/chrisjcnewton/pngquantiser-cep/'>Github.</a><br />Navigate to the build folder and locate the pngquantiser.zxp file.</p>
-				<h4>Installation for CC 2014</h4>
-				<p>Double click on the zxp file and Adobe Extension Manager should launch and allow you to install the Add-on. When asked &quot;The publisher of the extension could not be verified... Are you sure you want to install this extension.&quot; Click Install.</p>
+	<!-- Two -->
+	<section id="two" class="wrapper">
+		<div class="inner alt">
+			<section class="spotlight">
+				<!-- <div class="image"><img src="images/pic01.jpg" alt="" /></div> -->
+				<div class="content">
+					<h3>Technology</h3>
+					<p>The Add-on has been created using the Adobe Common Extensibility Platform (CEP). Under the hood it uses the <a href='https://pngquant.org/'>pngquant</a> Library which can create 8-bit PNGs with alpha transparency at vastly smaller file sizes. It is based heavily on <a href="https://pngmini.com/">ImageAlpha</a> which is a standalone mac app with similar functionality. This Add-on brings that functionality into Photoshop on both Mac and Windows.</p>
+				</div>
+			</section>
+			<section>
+				<!-- <div class="image"><img src="images/pic02.jpg" alt="" /></div> -->
+				<div class="content">
+					<h3>Installation</h3>
+					<p><a href='https://github.com/chrisjcnewton/pngquantiser-cep/archive/master.zip'>Download the zip</a> or clone the repository from <a href='https://github.com/chrisjcnewton/pngquantiser-cep/'>Github.</a><br />Navigate to the build folder and locate the pngquantiser.zxp file.</p>
+					<h4>Installation for CC 2014</h4>
+					<p>Double click on the zxp file and Adobe Extension Manager should launch and allow you to install the Add-on. When asked &quot;The publisher of the extension could not be verified... Are you sure you want to install this extension.&quot; Click Install.</p>
 
-				<h4>Installation for CC 2015 and higher</h4>
-				<p>As of CC 2015 Adobe has dropped support for Adobe Extension Manager in favour of installing via the <a href="https://creative.adobe.com/addons">Adobe Add-ons site.</a> As this Add-on has not been published yet, the zxp needs to be installed manually.</p>
+					<h4>Installation for CC 2015 and higher</h4>
+					<p>As of CC 2015 Adobe has dropped support for Adobe Extension Manager in favour of installing via the <a href="https://creative.adobe.com/addons">Adobe Add-ons site.</a> As this Add-on has not been published yet, the zxp needs to be installed manually.</p>
 
-				<p>The easiest method is to download a third-party tool called <a href="http://zxpinstaller.com/">ZXPInstaller</a> and drag the zxp file onto the tool.</p>
-			</div>
-		</section>
-		<section class="">
-			<div class="image"><img src="images/png-quant.png" alt="" /></div>
-			<div class="content">
-				<h3>How it works</h3>
-				<p>Once installed the Add-on can be found in the &quot;Window&quot; > &quot;Extensions&quot; menu under the entry &quot;PNG Quantiser&quot;. Once the Add-on has been opened it can be docked in any pallete desired for future use.</p>
-				<ul>
-					<li>Open an image in Photoshop that you would like to save as a quantised PNG.</li>
-					<li>Click on the &quot;Load Current Image&quot; button in the Add-on.</li>
-					<li>The image will now appear in the preview window in the Add-on.</li>
-					<li>The zoom level can be adjusted by clicking on the appropriate buttons above the preview window. It can also be adjusted using the mouse wheel and clicking on the image with the mouse.</li>
-					<li>The background colour of the preview window can be changed by clicking on the appropriate buttons below the preview window.</li>
-					<li>The number of colours to quantise the image by can be changed by clicking on the appropriate buttons below the preview window. The amount of file size being saved can be seen in the file size details area.</li>
-					<li>Once happy with the amount of compression the PNG file can be saved by clicking on the &quot;Save Quantised Image&quot; button.</li>
-				</ul>
-			</div>
-		</section>
-		<!-- <section class="special">
-		<ul class="icons labeled">
-		<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
-		<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
-		<li><span class="icon fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
-		<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
-		<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
-	</ul>
-</section> -->
+					<p>The easiest method is to download a third-party tool called <a href="http://zxpinstaller.com/">ZXPInstaller</a> and drag the zxp file onto the tool.</p>
+				</div>
+			</section>
+			<section class="">
+				<div class="image"><img src="images/png-quant.png" alt="" /></div>
+				<div class="content">
+					<h3>How it works</h3>
+					<p>Once installed the Add-on can be found in the &quot;Window&quot; > &quot;Extensions&quot; menu under the entry &quot;PNG Quantiser&quot;. Once the Add-on has been opened it can be docked in any pallete desired for future use.</p>
+					<ul>
+						<li>Open an image in Photoshop that you would like to save as a quantised PNG.</li>
+						<li>Click on the &quot;Load Current Image&quot; button in the Add-on.</li>
+						<li>The image will now appear in the preview window in the Add-on.</li>
+						<li>The zoom level can be adjusted by clicking on the appropriate buttons above the preview window. It can also be adjusted using the mouse wheel and clicking on the image with the mouse.</li>
+						<li>The background colour of the preview window can be changed by clicking on the appropriate buttons below the preview window.</li>
+						<li>The number of colours to quantise the image by can be changed by clicking on the appropriate buttons below the preview window. The amount of file size being saved can be seen in the file size details area.</li>
+						<li>Once happy with the amount of compression the PNG file can be saved by clicking on the &quot;Save Quantised Image&quot; button.</li>
+					</ul>
+				</div>
+			</section>
+			<!-- <section class="special">
+			<ul class="icons labeled">
+			<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
+			<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
+			<li><span class="icon fa-cloud"><span class="label">Elit fusce consequat</span></span></li>
+			<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
+			<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
+		</ul>
+	</section> -->
 </div>
 </section>
 
 <!-- Three -->
 <section id="three" class="wrapper style2 special">
 	<header class="major">
-		<h2>Magna leo sapien gravida</h2>
-		<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
-			lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.</p>
-		</header>
-		<ul class="actions">
-			<li><a onclick="javascript:ga('send', 'event', 'button', 'Zip Download');" href="https://github.com/chrisjcnewton/pngquantiser-cep/archive/master.zip" class="button special icon fa-download">Download</a></li>
-			<li><a href="#" class="button">Donate</a></li>
-		</ul>
-	</section>
+		<h2>Why not Donate?</h2>
+		<p>If you find this Add on useful please think about<br />sending a donation to help fund the development.</p>
+	</header>
+	<ul class="actions">
+		<li><a onclick="javascript:ga('send', 'event', 'button', 'Zip Download');" href="https://github.com/chrisjcnewton/pngquantiser-cep/archive/master.zip" class="button special icon fa-download">Download</a></li>
+		<!-- <li><a href="#" class="button">Donate</a></li> -->
+		<li>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="U8UTMDZN8GY4Y">
+				<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</li>
+
+	</ul>
+</section>
 
 
 
 <!-- Footer -->
 <footer id="footer">
 	<!-- <ul class="icons">
-		<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-		<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-	</ul> -->
-	<p class="copyright">&copy; Chris Newton. Site Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
+	<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+	<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+	<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+</ul> -->
+<p class="copyright">&copy; Chris Newton. Site Design Template: <a href="http://html5up.net">HTML5 UP</a></p>
 </footer>
 
 <!-- Scripts -->

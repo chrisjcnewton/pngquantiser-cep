@@ -294,7 +294,7 @@
 	function getTmpFolderPath() {
 		if (tmpFolderPath == null) {
 			//tmpFolderPath = cs.getSystemPath(SystemPath.EXTENSION) + '/tmp/';
-			tmpFolderPath = cs.getSystemPath(SystemPath.USER_DATA) + '/tmp/';
+			tmpFolderPath = cs.getSystemPath(SystemPath.USER_DATA) + '/pngquantisercep/';
 			console.log(tmpFolderPath);
 		}
 		return tmpFolderPath;

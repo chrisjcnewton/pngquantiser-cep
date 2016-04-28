@@ -1,5 +1,5 @@
 # PNG Quantiser - A Photoshop Add-on
-PNG Quantiser Add-on for Photoshop CC 2014 and higher.
+[PNG Quantiser](http://chrisjcnewton.github.io/pngquantiser-cep/) Add-on for Photoshop CC 2014 and higher.
 
 This Add-on allows the creation of 8-bit quantised PNGs which can create much smaller (~75%) transparent PNGs than is capable with the normal save for web exporter.
 This Add-on is compatible with `Photoshop CC 2014` and higher.
@@ -20,7 +20,7 @@ When asked `The publisher of the extension could not be verified... Are you sure
 ### Installation for CC 2015 and higher
 As of CC 2015 Adobe has dropped support for `Adobe Extension Manager` in favour of installing via the Adobe Add-ons (https://creative.adobe.com/addons) site.
 ~~As this Add-on has not been published yet, the `zxp` needs to be installed manually.~~
-The Add-on can be installed from the Adobe Add-ons site (https://creative.adobe.com/addons/products/14877#.VyHJJaMrIUE) here.
+The Add-on can be installed from the Adobe Add-ons site [here](https://creative.adobe.com/addons/products/14877#.VyHJJaMrIUE).
 
 ### Manual Installation for CC 2015 and higher
 Download a zip or clone the repository.

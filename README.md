@@ -10,17 +10,21 @@ Under the hood it uses the [pngquant](https://pngquant.org/) Library which can c
 It is based heavily on [ImageAlpha](https://pngmini.com/) which is a standalone mac app with similar functionality. This Add-on brings that functionality into Photoshop on both platforms.
 
 ## Installation
-Download a zip or clone the repository.
-Navigate to the build folder and locate the `pngquantiser.zxp` file.
 
 ### Installation for CC 2014
+Download a zip or clone the repository.
+Navigate to the build folder and locate the `pngquantiser.zxp` file.
 Double click on the `zxp` file and `Adobe Extension Manager` should launch and allow you to install the Add-on.
 When asked `The publisher of the extension could not be verified... Are you sure you want to install this extension`. Click `Install`.
 
 ### Installation for CC 2015 and higher
 As of CC 2015 Adobe has dropped support for `Adobe Extension Manager` in favour of installing via the Adobe Add-ons (https://creative.adobe.com/addons) site.
-As this Add-on has not been published yet, the `zxp` needs to be installed manually.
+~~As this Add-on has not been published yet, the `zxp` needs to be installed manually.~~
+The Add-on can be installed from the Adobe Add-ons site (https://creative.adobe.com/addons/products/14877#.VyHJJaMrIUE) here.
 
+### Manual Installation for CC 2015 and higher
+Download a zip or clone the repository.
+Navigate to the build folder and locate the `pngquantiser.zxp` file.
 The easiest method is to download a third-party tool called [ZXPInstaller](http://zxpinstaller.com/) and drag the `zxp` file onto the tool.
 
 ## How it works

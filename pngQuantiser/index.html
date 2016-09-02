@@ -70,7 +70,19 @@
 				<p id='file-size'>0 Bytes<br>0 KBytes<br>0 MBytes</p>
 				<p id='perc-saved'>0% Saved</p>
 			</div>
-			<button id='saveImageBut' class="topcoat-button--large--cta" disabled>Save Quantised Image</button>
+			<div class="saveButtonsContainer">
+				<button id='saveImageBut' class="topcoat-button--large--cta" disabled>Save Quantised Image</button>
+				<button id='saveBase64But' class="topcoat-button--cta" disabled>Save Base64 Image</button>				
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+
+		<div class="grey-out"></div>
+
+		<div class="base-64-dialog">
+			<p>Base64 Image string has been copied to the clipboard</p>
+			<input type="text" class="topcoat-text-input image-data"></input>
+			<button class="topcoat-button--cta dialog-close">Close</button>
 		</div>
 
 

@@ -2,7 +2,7 @@
 <ExtensionManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	ExtensionBundleId="com.chrisjcnewton.extensions"
 	ExtensionBundleName="PNG Quantiser"
-	ExtensionBundleVersion="1.0"
+	ExtensionBundleVersion="1.1"
 	Version="5.0">
 	<Author>Chris Newton</Author>
 	<Abstract>

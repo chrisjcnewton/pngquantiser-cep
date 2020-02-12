@@ -2,7 +2,8 @@
 <ExtensionList>
 	<Extension Id="com.chrisjcnewton.extensions.pngquantiser">
 		<HostList>
-			<Host Name="PHXS" Port="8080"/> 		
+			<Host Name="PHXS" Port="7070"/> 
+			<Host Name="PHSP" Port="7070"/>
 		</HostList>
 	</Extension>
 </ExtensionList>

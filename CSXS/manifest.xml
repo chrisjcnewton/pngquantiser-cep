@@ -3,33 +3,33 @@
 	ExtensionBundleId="com.chrisjcnewton.extensions"
 	ExtensionBundleName="PNG Quantiser"
 	ExtensionBundleVersion="1.1"
-	Version="5.0">
+	Version="9.0">
 	<Author>Chris Newton</Author>
 	<Abstract>
 		This extension allows the creation of 8-bit quantised PNGs which can create much smaller transparent PNGs than is capable by the normal save for web exporter.
 	</Abstract>
 	<ExtensionList>
 		<Extension Id="com.chrisjcnewton.extensions.pngquantiser"
-			Version="0.1"/>
+			Version="1.1"/>
 		</ExtensionList>
 		<ExecutionEnvironment>
 			<HostList>
-				<Host Name="PHXS" Version="15.0" />
-				<Host Name="PHSP" Version="15.0" />
+				<Host Name="PHXS" Version="[14.0,99.9]" />
+				<!-- <Host Name="PHSP" Version="21" /> -->
 
 			</HostList>
 			<LocaleList>
 				<Locale Code="All"/>
 			</LocaleList>
 			<RequiredRuntimeList>
-				<RequiredRuntime Name="CSXS" Version="5.0"/>
+				<RequiredRuntime Name="CSXS" Version="9.0"/>
 			</RequiredRuntimeList>
 		</ExecutionEnvironment>
 		<DispatchInfoList>
 			<Extension Id="com.chrisjcnewton.extensions.pngquantiser">
 				<DispatchInfo>
 					<Resources>
-						<MainPath>./index.html</MainPath>
+						<MainPath>./client/index.html</MainPath>
 						<CEFCommandLine>
 							<Parameter>--enable-nodejs</Parameter>
 							<Parameter>--mixed-context</Parameter>
@@ -54,10 +54,10 @@
 							</MinSize>
 						</Geometry>
 						<Icons>
-							<Icon Type="Normal"		 >./icons/icon_light.png</Icon>
-							<Icon Type="RollOver"	 >./icons/icon_light_over.png</Icon>
-							<Icon Type="DarkNormal"	 >./icons/icon_dark.png</Icon>
-							<Icon Type="DarkRollOver">./icons/icon_dark_over.png</Icon>
+							<Icon Type="Normal"		 >./client/icons/icon_light.png</Icon>
+							<Icon Type="RollOver"	 >./client/icons/icon_light_over.png</Icon>
+							<Icon Type="DarkNormal"	 >./client/icons/icon_dark.png</Icon>
+							<Icon Type="DarkRollOver">./client/icons/icon_dark_over.png</Icon>
 						</Icons>
 					</UI>
 				</DispatchInfo>

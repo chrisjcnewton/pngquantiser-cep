@@ -8,7 +8,7 @@
 	function init() {
 		cs = new CSInterface();
 		var extPath = cs.getSystemPath(SystemPath.EXTENSION);
-		var jsxPath = extPath + "/ext/tool.jsx";
+		var jsxPath = extPath + "/host/tool.jsx";
 		cs.evalScript('$.evalFile( "' + jsxPath + '")');
 
 		saveImageBut = document.querySelector('#saveImageBut');
@@ -23,8 +23,8 @@
 		loaderCover = document.querySelector('#loader-cover');
 
 		imageCanvas = document.querySelector('#imageCanvas');
-		imageCanvas.width = 800;
-		imageCanvas.height = 600;
+		// imageCanvas.width = 800;
+		// imageCanvas.height = 600;
 
 		setAppTheme(null);
 		cs.addEventListener(CSInterface.THEME_COLOR_CHANGED_EVENT, setAppTheme);
@@ -148,12 +148,12 @@
 
 	function onSaveB64Clicked() {
 
-		
+
 		var image = new Image();
 
 		image.onload = function () {
 			var canvas = document.createElement('canvas');
-			canvas.width = this.naturalWidth; 
+			canvas.width = this.naturalWidth;
 			canvas.height = this.naturalHeight;
 			canvas.getContext('2d').drawImage(this, 0, 0);
 
@@ -162,7 +162,7 @@
 			var imageDataArea = document.querySelector('.image-data');
 			imageDataArea.value = base64ImageData;
 
-			 //myelement = document.getElementById('#myelement'),
+			//myelement = document.getElementById('#myelement'),
 			dialog.classList.add('show');
 			greyOut.classList.add('show');
 			imageDataArea.select();
@@ -174,9 +174,9 @@
 		image.src = getTmpFolderPath() + 'orig-tmp' + currentImageSelected + '.png';
 	}
 
-	function onDialogCloseClicked(e){		
+	function onDialogCloseClicked(e) {
 		dialog.classList.remove('show');
-		greyOut.classList.remove('show');		
+		greyOut.classList.remove('show');
 	}
 
 	function deleteFolderRecursive(path) {
@@ -239,10 +239,10 @@
 
 		if (osInfo.indexOf('Windows') > -1) {
 			console.log('This is windows');
-			pngQuantBinName = '/pngquant/pngquant.exe';
+			pngQuantBinName = '/client/bin/pngquant.exe';
 		} else if (osInfo.indexOf('Mac') > -1) {
 			console.log('This is mac');
-			pngQuantBinName = '/pngquant/pngquant';
+			pngQuantBinName = '/client/bin/pngquant';
 		}
 
 		var arg0 = cs.getSystemPath(SystemPath.EXTENSION) + pngQuantBinName;
